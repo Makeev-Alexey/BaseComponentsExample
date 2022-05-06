@@ -9,11 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".ProviderExampleActivity"
+            android:exported="false"
+            android:label="@string/title_activity_provider_example"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+
         <provider
             android:name=".MyContentProvider"
             android:authorities="com.example.myapplication.MyContentProvider"
             android:enabled="true"
-            android:exported="true"></provider>
+            android:exported="true" />
 
         <activity
             android:name=".ReceiverExampleActivity"

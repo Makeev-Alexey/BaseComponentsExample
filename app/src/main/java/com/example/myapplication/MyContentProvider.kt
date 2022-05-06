@@ -78,6 +78,7 @@ class MyContentProvider : ContentProvider(){
         return if (db != null) {
             true
         } else false
+
     }
 
     override fun query(

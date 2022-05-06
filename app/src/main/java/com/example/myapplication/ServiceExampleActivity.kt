@@ -10,7 +10,8 @@ class ServiceExampleActivity : AppCompatActivity() {
     private lateinit var binding: ActivityServiceExampleBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_service_example)
+        binding = ActivityServiceExampleBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         startService(Intent(this, MyService::class.java))
         binding.button3.setOnClickListener {
             val intent = Intent(this, ReceiverExampleActivity::class.java)

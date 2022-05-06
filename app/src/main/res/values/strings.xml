@@ -11,4 +11,5 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_receiver_example">ReceiverExampleActivity</string>
     <string name="explanation_activity">пример использования - отображение иформации и основа UI</string>
+    <string name="title_activity_provider_example">providerExampleActivity</string>
 </resources>

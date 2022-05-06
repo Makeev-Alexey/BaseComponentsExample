@@ -27,7 +27,7 @@ class ReceiverExampleActivity : AppCompatActivity() {
             registerReceiver(receiver, it)
         }
         binding.button2.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, ProviderExampleActivity::class.java)
             startActivity(intent)
         }
     }
